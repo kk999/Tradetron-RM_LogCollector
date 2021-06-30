@@ -1,0 +1,15 @@
+day=$(date +'%Y-%m-%d')
+date=$(date +'%Y%m%d')
+time=$(date +'%H%M%S')
+> /home/tradetron/tsefix/bin/T845TA2/XTAI/log/$day/XTAI.log
+> /home/tradetron/tsefix/bin/T845TA3/XTAI/log/$day/XTAI.log
+> /home/tradetron/tsefix/bin/T845TA4/XTAI/log/$day/XTAI.log
+> /home/tradetron/tsefix/bin/T845TA5/XTAI/log/$day/XTAI.log
+> /home/tradetron/tsefix/bin/T845TA6/XTAI/log/$day/XTAI.log
+> /home/tradetron/tsefix/bin/O845TB2/ROCO/log/$day/ROCO.log
+> /home/tradetron/tsefix/bin/O845TB3/ROCO/log/$day/ROCO.log
+> /home/tradetron/tsefix/bin/O845TB4/ROCO/log/$day/ROCO.log
+> /home/tradetron/tsefix/bin/O845TB5/ROCO/log/$day/ROCO.log
+> /home/tradetron/tsefix/bin/O845TB6/ROCO/log/$day/ROCO.log
+> /mnt/nfs/var/nfsshare.tao/twse_fix_$date.log
+rm /home/tradetron/LogCollector/*.step

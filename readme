@@ -1,0 +1,24 @@
+
+主機：
+	tradetron@omstest:/home/tradetron/LogCollection
+
+資料來源：
+	由下列內容組出 LOG 檔的目錄位置：
+		/home/tradetron/tradetron/TRADETRON.ini
+			SenderCompID = T845TA2/O845TB2          ; FIX SenderCompID
+
+	所以目錄為：
+	/home/tradetron/tsefix/bin/T845TA2
+	/home/tradetron/tsefix/bin/O845TB2
+
+	更進一步確認出 LOG 檔的路徑位置：
+	/home/tradetron/tsefix/bin/T845TA2/XTAI/log/%TODAY%/XTAI.log
+	/home/tradetron/tsefix/bin/O845TB2/ROCO/log/%TODAY%/ROCO.log
+
+	然後設定 LOG 檔的路徑位置：
+		/home/tradetron/LogCollection/paths.cfg
+			T845TA2=/home/tradetron/tsefix/bin/T845TA2/XTAI/log/%TODAY%/XTAI.log
+			O845TB2=/home/tradetron/tsefix/bin/O845TB2/ROCO/log/%TODAY%/ROCO.log
+
+資料目的地：
+	/mnt/nfs/var/nfsshare.tao/twse_fix_YYYYMMDD.log
